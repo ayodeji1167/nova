@@ -1,7 +1,67 @@
-.page3{
-    background-color: rgb(50, 147, 231);
-    height: 100vh;
-    width: 100vw;
-    z-index: 2;
-    position: relative;
+.page3 {
+  background: linear-gradient(45deg, #51545f, #323337);
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  position: relative;
+  color: white;
+  padding: 10rem var(--side-padding) 0 var(--side-padding);
+}
+.page3-title {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 4.5rem;
+}
+.page3 h2 {
+  font-size: 6.5rem;
+  text-align: center;
+  overflow: hidden;
+
+  font-family: 'Neuehaasunica-Regular', sans-serif;
+}
+.page3-title .line {
+    overflow: hidden;
+ }
+.p3-center {
+  display: grid;
+  grid-column-gap: 12rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+}
+
+.p3-it {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.p3-it-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.p3-it-top > div {
+  width: 1.5rem;
+}
+.p3-it-top h3 {
+  font-family: 'Neuehaasunica-Regular', sans-serif;
+
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.p3-it-content {
+  font-family: 'Neuehaasunica-Regular', sans-serif;
+  font-weight: 200;
+  color: #c1c1c1;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.p3-img-btm {
+  margin-top: 10rem;
+  max-width: 63rem;
+  margin-left: auto;
+  margin-right: auto;
 }

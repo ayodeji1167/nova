@@ -17,7 +17,7 @@
 }
 body{
   font-family: 'Neuehaasunica-Regular', sans-serif;
-
+  -webkit-font-smoothing: antialiased;
 }
 .main{
   position: relative;

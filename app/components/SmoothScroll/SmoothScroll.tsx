@@ -1,26 +1,27 @@
-'use client';
+"use client";
 
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from "react";
 
 export const SmoothScrollContext = createContext({
   scroll: null,
 });
 
-export const SmoothScrollProvider = ({ children, options }:any) => {
+export const SmoothScrollProvider = ({ children, options }: any) => {
   const [scroll, setScroll] = useState<any>(null);
 
   useEffect(() => {
     if (!scroll) {
       (async () => {
         try {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default;
+          const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
           setScroll(
             new LocomotiveScroll({
               el:
-                document.querySelector('[data-scroll-container]') ?? undefined as any,
+                document.querySelector("[data-scroll-container]") ??
+                (undefined as any),
               ...options,
-            })
+            }),
           );
         } catch (error) {
           throw Error(`[SmoothScrollProvider]: ${error}`);
@@ -40,5 +41,5 @@ export const SmoothScrollProvider = ({ children, options }:any) => {
   );
 };
 
-SmoothScrollContext.displayName = 'SmoothScrollContext';
-SmoothScrollProvider.displayName = 'SmoothScrollProvider';
+SmoothScrollContext.displayName = "SmoothScrollContext";
+SmoothScrollProvider.displayName = "SmoothScrollProvider";
