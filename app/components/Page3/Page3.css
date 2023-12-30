@@ -61,7 +61,16 @@
 
 .p3-img-btm {
   margin-top: 10rem;
-  max-width: 63rem;
+  width: 64rem;
   margin-left: auto;
   margin-right: auto;
-}
+  position: relative;
+   padding: 0;
+  position: relative;
+  }
+ .p3-img-btm img {
+    object-fit: contain;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: -5px;
+ }

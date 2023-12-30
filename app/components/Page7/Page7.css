@@ -1,0 +1,10 @@
+.page7{
+    background: rgb(137, 70, 70);
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    padding-top: 9rem;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    min-height: 100vh;
+}

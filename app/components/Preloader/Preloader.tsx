@@ -1,41 +1,41 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import { gsap, Power1 } from "gsap";
-import { useGSAP } from "@gsap/react";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import { gsap, Power1 } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
-import "./Preloader.css";
+import './Preloader.css';
 export default function Preloader() {
   useGSAP(() => {
     const tl = gsap.timeline({});
-    tl.to(".line", {
-      height: "30px",
+    tl.to('.line', {
+      height: '30px',
       duration: 0.8,
       ease: Power1.easeIn,
     });
-    tl.fromTo(".logo img", { x: 300 }, { x: 0, duration: 0.8 });
-    tl.fromTo(".speaker img", { x: -300 }, { x: 0, duration: 0.8 }, "-=.3");
-    tl.to(".logo img", { y: 300, ease: Power1.easeIn, duration: 0.9 }, "+=.2");
-    tl.to(".speaker img", { y: 300, ease: Power1.easeIn, duration: 0.9 }, "<");
+    tl.fromTo('.logo img', { x: 300 }, { x: 0, duration: 0.8 });
+    tl.fromTo('.speaker img', { x: -300 }, { x: 0, duration: 0.8 }, '-=.3');
+    tl.to('.logo img', { y: 300, ease: Power1.easeIn, duration: 0.9 }, '+=.2');
+    tl.to('.speaker img', { y: 300, ease: Power1.easeIn, duration: 0.9 }, '<');
     tl.to(
-      ".line",
+      '.line',
       {
-        height: "0",
+        height: '0',
         ease: Power1.easeIn,
       },
-      "<",
+      '<'
     );
     tl.fromTo(
-      ".preloader",
+      '.preloader',
       {
-        clipPath: "inset(0 0 0px 0)",
+        clipPath: 'inset(0 0 0px 0)',
       },
       {
-        clipPath: "inset(0 0 1000px 0)",
+        clipPath: 'inset(0 0 1000px 0)',
         duration: 1,
         ease: Power1.easeInOut,
       },
-      "<",
+      '<'
     );
   });
   return (

@@ -1,36 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+'use client';
 
-import React from "react";
-import { gsap, Expo } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import SplitType from "split-type";
-import "./Page2.css";
+import React from 'react';
+import { gsap, Expo } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+import SplitType from 'split-type';
+import './Page2.css';
 export default function Page2() {
   useGSAP(() => {
     const animateText = (target: any, staggerValue = 0.02) => {
-      new SplitType(target, { types: "lines,words" });
+      new SplitType(target, { types: 'lines,words' });
 
       gsap.fromTo(
         `${target} .word`,
-        { y: 100, ease: Expo.easeOut, skewX: "-6" },
+        { y: 100, ease: Expo.easeOut, skewX: '-6' },
         {
           y: 0,
-          skewX: "0",
+          skewX: '0',
           stagger: staggerValue,
           scrollTrigger: {
-            trigger: target.includes("top-text") ? ".top-text" : ".bottom-text",
-            start: "top 90%",
-            end: "bottom 90%",
+            trigger: target.includes('top-text') ? '.top-text' : '.bottom-text',
+            start: 'top 90%',
+            end: 'bottom 90%',
           },
-        },
+        }
       );
     };
     gsap.registerPlugin(ScrollTrigger);
-    animateText(".top-text p");
-    animateText(".page2 .bottom-text div > p");
-    const box = document.querySelector(".floating-img") as any;
+    animateText('.page2 .top-text p');
+    animateText('.page2 .bottom-text div > p');
+    const box = document.querySelector('.page2 .floating-img') as any;
 
     gsap.fromTo(
       box,
@@ -39,11 +39,11 @@ export default function Page2() {
         y: 0,
         scrollTrigger: {
           trigger: box,
-          start: "top 90%",
-          end: "bottom 100%",
+          start: 'top 90%',
+          end: 'bottom 100%',
           scrub: 2,
         },
-      },
+      }
     );
   });
 
@@ -72,8 +72,8 @@ export default function Page2() {
 
       <div className="floating-img">
         <img
-          width={"33%"}
-          height={"100%"}
+          width={'33%'}
+          height={'100%'}
           src="https://assets-global.website-files.com/654a0ac89fa4aa44fe8a3f95/6554d9e7d21d8d6f7be931c0_nova-speaker-xyz-frontview-p-800.webp"
           alt=""
         />

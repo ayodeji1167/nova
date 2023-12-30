@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Neuehaasunica-Regular', sans-serif;
 }
 
 @font-face {
@@ -16,7 +17,6 @@
   --side-padding: 3rem;
 }
 body{
-  font-family: 'Neuehaasunica-Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 .main{

@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import "./Navigation.css";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import './Navigation.css';
+import Image from 'next/image';
 
 export default function Navigation() {
   return (

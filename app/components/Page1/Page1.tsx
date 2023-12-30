@@ -1,24 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-import React from "react";
-import Navigation from "../Navigation/Navigation";
-import "./Page1.css";
-import { gsap, Power1 } from "gsap";
-import { useGSAP } from "@gsap/react";
-import SplitType from "split-type";
+'use client';
+import React from 'react';
+import Navigation from '../Navigation/Navigation';
+import './Page1.css';
+import { gsap, Power1 } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import SplitType from 'split-type';
 export default function Page1() {
   useGSAP(() => {
-    new SplitType(".big-nova p", { types: "chars" });
+    new SplitType('.big-nova p', { types: 'chars' });
     const tl = gsap.timeline({});
     tl.to(
-      ".img-wrapper",
+      '.img-wrapper',
       {
-        width: "56vw",
+        width: '56vw',
         ease: Power1.easeIn,
       },
-      "+=2.5",
+      '+=2.5'
     );
-    tl.to(".big-nova .char", { y: 0, stagger: 0.06, duration: 1 }, "<");
+    tl.to('.big-nova .char', { y: 0, stagger: 0.06, duration: 1 }, '<');
   });
   return (
     <div className="page1">
