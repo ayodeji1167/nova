@@ -12,7 +12,6 @@ import Page4 from './components/Page4/Page4';
 import Page5 from './components/Page5/Page5';
 import Page6 from './components/Page6/Page6';
 import Page7 from './components/Page7/Page7';
-import Preloader from './components/Preloader/Preloader';
 export default function Home() {
   // useEffect(() => {
   //   (async () => {
@@ -33,7 +32,7 @@ export default function Home() {
   return (
     <main className="main">
       {/* <SmoothScroll /> */}
-      <Preloader />
+      {/* <Preloader /> */}
       <div className="remaining-app">
         <Page1 />
         <Page2 />
