@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import Page5 from './components/Page5/Page5';
 import Page6 from './components/Page6/Page6';
 import Page7 from './components/Page7/Page7';
+import Page9 from './components/Page9/Page9';
+import Page8 from './components/Page8/Page8';
 export default function Home() {
   // useEffect(() => {
   //   (async () => {
@@ -37,6 +39,8 @@ export default function Home() {
         <Page5 />
         <Page6 />
         <Page7 />
+        <Page8 />
+        <Page9 />
       </div>
     </main>
   );

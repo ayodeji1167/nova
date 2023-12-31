@@ -1,0 +1,11 @@
+.page9{
+    background: rgb(159, 133, 133);
+    width: 100vw;
+    position: relative;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    min-height: 100vh;
+  }
+  
