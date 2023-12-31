@@ -119,7 +119,7 @@ export default function Page7() {
             bulletElement: 'bullet-ele',
             clickable: false,
           }}
-          style={{ background: 'yelflow', overflowX: 'scroll' }}
+          style={{ background: 'yelflow', overflowX: 'hidden' }}
           breakpoints={{
             480: {
               slidesPerView: 1.5,
