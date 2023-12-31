@@ -10,9 +10,10 @@
 
 .p6-img {
   width: 85vw;
+  margin: 0 auto;
 }
 
-.p6-img img{
-    position: relative;
-    bottom: -5px;
+.p6-img img {
+  position: relative;
+  bottom: -5px;
 }

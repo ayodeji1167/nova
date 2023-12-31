@@ -1,10 +1,121 @@
-.page7{
-    background: rgb(137, 70, 70);
-    width: 100vw;
-    position: relative;
-    z-index: 2;
-    padding-top: 9rem;
-    padding-left: var(--side-padding);
-    padding-right: var(--side-padding);
-    min-height: 100vh;
+.page7 {
+  background: linear-gradient(45deg, #51545f, #323337);
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+  min-height: 100vh;
+}
+
+.page7-title {
+  margin-bottom: 4.5rem;
+}
+.page7-title h2 {
+  font-size: 6.5rem;
+  overflow: hidden;
+  color: white;
+
+  font-family: 'Neuehaasunica-Regular', sans-serif;
+}
+.page7-title .line {
+  overflow: hidden;
+}
+.p7-btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.p7-btm {
+  margin-bottom: 2.5rem;
+}
+
+.p7-btm > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.p7-btm button {
+  width: 4.8em;
+  height: 3.2em;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 1px solid rgba(244, 244, 244, 0.4);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: transparent;
+}
+.p7-btm button  .disabled{
+    background-color: red;
+}
+
+.p7-btm button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(244, 244, 244, 0.8);
+}
+
+.custom-swiper {
+  overflow: hidden;
+}
+.p7-fc-img {
+  width: 6rem;
+    height: 6rem;
+}
+
+/* ================P7 ITEM================= */
+.p7-feat-card {
+  color: white;
+
+  background-color: #34363a;
+  padding: 2.5em 1.5em;
+  border-radius: 0.2rem;
+}
+.p7-fc-cont {
+    gap: 0.5rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+    justify-content: space-between;
+}
+.p7-feat-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.p7-feat-card p {
+    color: #c1c1c1;
+    font-size: 1.1rem;
+    line-height: 20px;
+}
+.p7-fc-cont > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* ================PAGINATION============== */
+
+.page7 .scroll-bar {
+  /* background-color: red; */
+  height: 5px;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page7 .bullet {
+  background-color: #7b7b7b;
+  height: 2px;
+  width: 3rem;
+}
+.page7 .bullet-active {
+  background-color: #f4f4f4;
+}
+.page7 .bullet-ele {
+  height: 2px;
+  width: 80px;
 }
