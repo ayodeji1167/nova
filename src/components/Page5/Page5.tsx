@@ -7,7 +7,7 @@ import {
   connectivity,
   design,
   dimension,
-} from '@/app/data/specification';
+} from '@/src/data/specification';
 
 export default function Page5() {
   return (

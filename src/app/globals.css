@@ -7,11 +7,11 @@
 
 @font-face {
   font-family: 'Neuehaasunica-Regular';
-  src: url('./assets/fonts/NeuehaasunicaRegular.woff2');
+  src: url('../../src/assets/fonts/NeuehaasunicaRegular.woff2');
 }
 @font-face {
   font-family: 'Neuehaasunica-Medium';
-  src: url('./assets/fonts/NeuehaasunicaMedium.woff2');
+  src: url('../../src/assets/fonts/NeuehaasunicaMedium.woff2');
 }
 :root {
   --side-padding: 3rem;

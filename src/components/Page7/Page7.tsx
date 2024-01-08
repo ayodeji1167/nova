@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-import { swiperData } from '@/app/data/swiper';
+import { swiperData } from '@/src/data/swiper';
 import Page7Item from './Page7Item';
 import { useRef, useState } from 'react';
 
@@ -21,7 +21,7 @@ import 'swiper/css';
 export default function Page7() {
   useGSAP(() => {
     const animateText = (target: any, staggerValue = 0.04) => {
-      new SplitType(target, { types: 'lines,words' });
+      new SplitType(target, { types: 'words' });
 
       gsap.fromTo(
         `${target} .word`,

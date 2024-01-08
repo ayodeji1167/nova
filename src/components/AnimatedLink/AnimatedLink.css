@@ -1,0 +1,17 @@
+.an-link {
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+   height: 1.5rem;
+}
+
+.an-link > div {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  transition: all 0.35s ease-out;
+  position: relative;
+  margin-top: 0.13rem;
+  transform: translateX(-180px);
+  display: block;
+ }

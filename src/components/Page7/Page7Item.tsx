@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { FeaturesCard } from '@/app/types/features-item';
+import { FeaturesCard } from '@/src/types/features-item';
 
 export default function Page7Item({
   title,

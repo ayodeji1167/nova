@@ -1,0 +1,85 @@
+.page8 {
+  background: white;
+  width: 100vw;
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+  min-height: 100vh;
+}
+.page8-title {
+  margin-bottom: 4.5rem;
+}
+.page8-title h2 {
+  font-size: 6.5rem;
+  overflow: hidden;
+  color: black;
+
+  font-family: 'Neuehaasunica-Regular', sans-serif;
+}
+.page8-title .line {
+  overflow: hidden;
+}
+
+.p8-btm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+/* =============PAGE 8 ITEM============= */
+.p8-it {
+  cursor: pointer;
+}
+.p8-it-img-cont {
+  overflow: hidden;
+  border-radius: 5px;
+   padding: 0;
+  position: relative;
+}
+.p8-it-img-cont img {
+  transition: all 0.35s ease-out;
+  object-fit: cover;
+  display: block;
+}
+.p8-it:hover .p8-it-img-cont img {
+  transform: scale(1.1);
+}
+.p8-it-btm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.p8-it-btm >p:nth-of-type(1){
+  color:#f27120;
+  font-size: .9rem;
+}
+
+.p8-it-btm h3{
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -.5px;
+}
+
+.pt-itm-btn{
+  margin-top: .5rem;
+  width: fit-content;
+   overflow: hidden;
+   font-size: 17px;
+   position: relative;
+}
+
+.pt-itm-btn> div{
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  transition: all 0.35s ease-out;
+  position: relative;
+margin-top: .13rem;
+}
+ 
+ 
