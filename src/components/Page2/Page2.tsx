@@ -31,6 +31,7 @@ export default function Page2() {
     animateText('.page2 .top-text p');
     animateText('.page2 .bottom-text div > p');
     const box = document.querySelector('.page2 .floating-img') as any;
+    const xyzText = document.querySelectorAll('.xyz p');
 
     gsap.fromTo(
       box,
@@ -42,6 +43,22 @@ export default function Page2() {
           start: 'top 90%',
           end: 'bottom 100%',
           scrub: 2,
+        },
+      }
+    );
+    gsap.fromTo(
+      xyzText,
+      {
+        y: 200,
+      },
+      {
+        y: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: '.xyz',
+          start: 'top 90%',
+          end: 'bottom 90%',
+          toggleActions: 'play none none reverse',
         },
       }
     );
