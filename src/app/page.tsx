@@ -6,7 +6,6 @@ import Page6 from '../components/Page6/Page6';
 import Page7 from '../components/Page7/Page7';
 import Page9 from '../components/Page9/Page9';
 import Page8 from '../components/Page8/Page8';
-import Preloader from '../components/Preloader/Preloader';
 import Page1 from '../components/Page1/Page1';
 import Page2 from '../components/Page2/Page2';
 import Page3 from '../components/Page3/Page3';
@@ -20,7 +19,7 @@ export default function Home() {
   }, []);
   return (
     <main className="main">
-      <Preloader />
+      {/* <Preloader /> */}
       <div className="remaining-app">
         <Page1 />
         <Page2 />

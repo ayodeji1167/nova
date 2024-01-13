@@ -2,7 +2,7 @@ nav {
   height: 4.8rem;
   padding: 0 var(--side-padding);
   position: relative;
-  z-index: 2;
+  z-index: 10;
   padding-top: 1rem;
 }
 
@@ -11,13 +11,16 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  position: relative;
+  z-index: 7;
 }
+
 .ham-line {
   width: 1.8rem;
   background: white;
   height: 1.5px;
   position: relative;
-}
+ }
 .hambuger {
   display: flex;
   flex-direction: column;
@@ -77,4 +80,23 @@ nav button:hover{
     background-color: white;
     color: black;
 
+}
+
+
+/* ================ */
+.header-dp{
+  height: 100vh;
+   width: 100vw;
+  position: fixed;
+  z-index: 4;
+  top: -100vh;
+  left: 0;
+  /* background:red; */
+  background: linear-gradient(45deg, #51545f, #323337);
+display: grid;
+grid-column-gap: 2em;
+grid-row-gap: 2em;
+grid-template-rows: auto;
+grid-template-columns: 1fr 1fr 1.25fr;
+grid-auto-columns: 1fr;
 }
