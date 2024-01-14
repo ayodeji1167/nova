@@ -4,7 +4,7 @@ import './Navigation.css';
 import Image from 'next/image';
 import DropDown from './DropDown';
 import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
+import gsap, { Power1, Power4 } from 'gsap';
 
 export default function Navigation() {
   const navRef = useRef(null);
@@ -21,15 +21,51 @@ export default function Navigation() {
       tl.current
         .to('.header-dp', {
           top: 0,
+          ease: Power4.easeInOut,
+          duration: 1.5,
         })
         .to(
           '.ham-line:nth-of-type(1)',
-          { rotation: 45, y: 4.5, duration: 0.5, ease: 'power2.inOut' },
+          { rotation: 45, y: 4, duration: 0.5, ease: 'power2.inOut' },
           '<'
         )
         .to(
           '.ham-line:nth-of-type(2)',
-          { rotation: -45, y: -4.5, duration: 0.5, ease: 'power2.inOut' },
+          { rotation: -45, y: -4, duration: 0.5, ease: 'power2.inOut' },
+          '<'
+        )
+        .fromTo('.header-dp .flex', { opacity: 0 }, { opacity: 1 })
+        .fromTo(
+          '.header-dp .nav-links .an-link ',
+          { opacity: 0, x: '-200px' },
+          { opacity: 1, x: '0', stagger: 0.08 },
+          '<'
+        )
+        .fromTo(
+          '.dp-item',
+          {
+            clipPath: 'inset(0px 1000px 0px 0px)', // Initial clip (fully visible on the right)
+          },
+          {
+            clipPath: 'inset(0px 0px 0px 0px)', // Final clip (fully visible on the left)
+            ease: Power1.easeOut,
+            duration: 1,
+            stagger: '0.06',
+          },
+          '-=.5'
+        )
+        .to('.dp-itm-img', {
+          bottom: '0',
+          delay: 0,
+          ease: Power4.easeOut,
+          stagger: '0.06',
+          duration: 0.1,
+        })
+        .to(
+          '.dp-item .flex',
+          {
+            y: 0,
+          },
           '<'
         );
     },

@@ -10,7 +10,7 @@ export default function AnimatedLink({ name }: { name: string }) {
   const handleHover = contextSafe(() => {
     gsap.fromTo(
       '.an-link div',
-      { x: -180, display: 'block' },
+      { x: -250, display: 'block' },
       { x: 0, display: 'block' }
     );
   });
