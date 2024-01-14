@@ -34,7 +34,11 @@ export default function Navigation() {
           { rotation: -45, y: -4, duration: 0.5, ease: 'power2.inOut' },
           '<'
         )
-        .fromTo('.header-dp .flex', { opacity: 0 }, { opacity: 1 })
+        .fromTo(
+          '.header-dp .flex',
+          { opacity: 0, y: -30 },
+          { opacity: 1, y: 0 }
+        )
         .fromTo(
           '.header-dp .nav-links .an-link ',
           { opacity: 0, x: '-200px' },
@@ -64,7 +68,7 @@ export default function Navigation() {
         .to(
           '.dp-item .flex',
           {
-            y: 0,
+            top: 0,
           },
           '<'
         );

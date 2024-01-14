@@ -110,8 +110,8 @@ nav button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: .51rem;
- }
+  padding-bottom: 0.51rem;
+}
 .left-dp .flex {
   justify-content: left;
   color: white;
@@ -132,16 +132,16 @@ nav button:hover {
   background-color: white;
 }
 
-.dp-item-wrp{
+.dp-item-wrp {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
- }
-.dp-item{
+}
+.dp-item {
   color: white;
   background: #71818e;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   overflow: hidden;
   position: relative;
   padding: 1rem;
@@ -152,28 +152,30 @@ nav button:hover {
   justify-content: space-between;
   padding-bottom: 0;
 }
-.dp-item .flex{
+.dp-item .flex {
   justify-content: space-between;
   width: 100%;
-  transform: translateY(2rem);
+  position: relative;
+  top: 2rem;
 }
 
-.dp-itm-img{
+.dp-itm-img {
   width: 60%;
   position: relative;
-   bottom: -13.5rem;
-  transition: all .4s ease-in-out;
+  bottom: -13.5rem;
+  transition: all 0.4s ease-in-out;
   transform-origin: center;
   display: flex;
   justify-content: center;
-  }
- 
- .dp-item:hover .dp-itm-img{
-  scale: 1.09;
- }
+}
 
- .dp-item-f-wr{
+.dp-item:hover .dp-itm-img {
+  scale: 1.09;
+}
+
+.dp-item-f-wr {
   width: 100%;
   overflow: hidden;
-   min-height:2rem
- }
+  min-height: 2rem;
+  position: relative;
+}
