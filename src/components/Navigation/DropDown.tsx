@@ -46,7 +46,7 @@ export default function DropDown() {
           }
         />
         <DPItem
-          name={'NOVA XYZ'}
+          name={'NOVA Lite'}
           image={
             'https://assets-global.website-files.com/654a0ac89fa4aa44fe8a3f95/655f57a41893cf173f41a662_nova-speaker-lite-teaser.webp'
           }

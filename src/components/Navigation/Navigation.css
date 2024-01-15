@@ -1,9 +1,10 @@
 nav {
-  height: 4.8rem;
+  height: 4rem;
   padding: 0 var(--side-padding);
-  position: relative;
+  position: absolute;
   z-index: 10;
   padding-top: 1rem;
+  width: 100%;
 }
 
 .nav-wrapper {
@@ -136,7 +137,8 @@ nav button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
+  padding:1rem 0 2rem 0;
 }
 .dp-item {
   color: white;
@@ -160,9 +162,9 @@ nav button:hover {
 }
 
 .dp-itm-img {
-  width: 60%;
+  width: 65%;
   position: relative;
-  bottom: -13.5rem;
+  bottom: -15rem;
   transition: all 0.4s ease-in-out;
   transform-origin: center;
   display: flex;

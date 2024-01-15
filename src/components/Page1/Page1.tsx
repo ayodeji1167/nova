@@ -48,7 +48,6 @@ export default function Page1() {
             </div>
           </button>
         </div>
-
         <div className="big-nova">
           <p>NOVA</p>
         </div>

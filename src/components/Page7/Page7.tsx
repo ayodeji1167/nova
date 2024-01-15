@@ -42,8 +42,8 @@ export default function Page7() {
     animateText('.page7-title h2');
   });
 
-  const prevButton = useRef(null);
-  const nextButton = useRef(null);
+  const prevButton = useRef<any>(null);
+  const nextButton = useRef<any>(null);
   const swipperBullet = useRef(null);
   const swiperRef = useRef<any>(null);
   const [slidePosition, setSlidePosition] = useState({
@@ -56,11 +56,12 @@ export default function Page7() {
   };
 
   const updatePosition = (swiper: SwiperClass) => {
-    if (!swiper) return;
+    if (!swiper || swiper?.activeIndex === 1) return;
+
     if (swiper.hasOwnProperty('activeIndex')) {
       setSlidePosition({
-        isBegining: !swiper.activeIndex,
-        isEnd: swiperData.length - 3 === swiper.activeIndex,
+        isBegining: !swiper?.activeIndex,
+        isEnd: swiperData?.length - 3 === swiper?.activeIndex,
       });
     }
   };
@@ -100,8 +101,8 @@ export default function Page7() {
           speed={300}
           slidesPerView={3}
           navigation={{
-            prevEl: prevButton.current,
-            nextEl: nextButton.current,
+            prevEl: prevButton?.current,
+            nextEl: nextButton?.current,
           }}
           onBeforeInit={(swiper: any) => {
             swiper!.params!.navigation!.prevEl! = prevButton.current;
@@ -119,7 +120,6 @@ export default function Page7() {
             bulletElement: 'bullet-ele',
             clickable: false,
           }}
-          style={{ background: 'yelflow', overflowX: 'hidden' }}
           breakpoints={{
             480: {
               slidesPerView: 1.5,

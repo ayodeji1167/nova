@@ -10,6 +10,7 @@ import Page1 from '../components/Page1/Page1';
 import Page2 from '../components/Page2/Page2';
 import Page3 from '../components/Page3/Page3';
 import Page4 from '../components/Page4/Page4';
+import Preloader from '../components/Preloader/Preloader';
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -19,7 +20,7 @@ export default function Home() {
   }, []);
   return (
     <main className="main">
-      {/* <Preloader /> */}
+      <Preloader />
       <div className="remaining-app">
         <Page1 />
         <Page2 />

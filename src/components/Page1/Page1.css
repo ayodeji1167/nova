@@ -1,17 +1,19 @@
 .page1 {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100vw;
+  /* background-color: red; */
   background-color: #71818e;
   position: relative;
   overflow: hidden;
-  padding-bottom: 4rem;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .img-wrapper {
   position: absolute;
-  top: -10vh;
   width: 60vw;
   right: 9vw;
+  bottom: -2rem;
 }
 
 .img-wrapper img {
@@ -23,8 +25,19 @@
 .page1 .content {
   position: relative;
   z-index: 3;
-  top: 18vh;
   padding: 0 var(--side-padding);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 13rem;
+  /* margin-bottom: 2rem; */
+  /* background-color: yellow; */
+}
+
+.page1 .content > div:nth-of-type(1) {
+  margin-bottom: 2rem;
 }
 .content h1 {
   letter-spacing: -0.15rem;
@@ -43,7 +56,7 @@
   color: black;
   margin-top: 1.5rem;
   border: none;
-  padding:1rem 1.2rem  ;
+  padding: 1rem 1.2rem;
   width: 7rem;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -53,14 +66,14 @@
 }
 .button-wrapper {
   gap: 0.5rem;
-   display: flex;
+  display: flex;
   align-items: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   left: -20px;
- 
+
   /* background: rgb(217, 179, 179); */
   /* width: 80%; */
   transition: all 0.3s ease-in;
@@ -100,24 +113,27 @@
 }
 
 .baba {
-   overflow: hidden;
- }
-
-.big-nova{
-  margin-top: 2rem;
-  /* background-color: red; */
+  overflow: hidden;
 }
- .big-nova p{
+
+.big-nova {
+  /* bottom: 1rem;
+  margin-top: auto;
+  height: 17rem;
+  margin-bottom: 1rem; */
+  /* position: relative;
+  bottom: 1rem; */
+  /* height: 40vh; */
+}
+.big-nova p {
   color: white;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
   font-family: 'Neuehaasunica-Medium', sans-serif;
-  font-size: 21rem;
-  line-height: 1;
-  font-kerning: none;
-
- }
- .big-nova .char{
-  font-kerning: none;
-
-  transform: translateY(500px);
+  font-size: 18rem;
+   font-kerning: none;
+  font-weight: bold;
   }
+.big-nova .char {
+  font-kerning: none;
+  transform: translateY(500px);
+}
