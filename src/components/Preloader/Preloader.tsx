@@ -31,7 +31,7 @@ export default function Preloader() {
         clipPath: 'inset(0 0 0px 0)',
       },
       {
-        clipPath: 'inset(0 0 1000px 0)',
+        clipPath: 'inset(0 0 100vh 0)',
         duration: 1,
         ease: Power1.easeInOut,
       },

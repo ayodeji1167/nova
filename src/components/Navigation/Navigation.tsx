@@ -49,7 +49,7 @@ export default function Navigation() {
         )
         .fromTo(
           '.header-dp .nav-links .an-link ',
-          { opacity: 0, x: '-200px' },
+          { opacity: 0, x: '-100vh' },
           { opacity: 1, x: '0', stagger: 0.08 },
           '<'
         )
